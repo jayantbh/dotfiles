@@ -7,6 +7,7 @@ plugins=(
   zsh-autosuggestions
   autojump
   zsh-syntax-highlighting
+  history
 )
 
 source $ZSH/oh-my-zsh.sh
