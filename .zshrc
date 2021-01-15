@@ -54,9 +54,6 @@ alias gdelm='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branc
 # Git Config Aliases
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
-# Shuttl/Backend aliases -- remove if committing this to dotfiles --
-alias mviu='mvn clean install -U'
-
 # Misc Aliases (requires relevant commands to be available)
 alias space='watch -n 1 "df -h | grep /dev/disk1"'
 alias ram='watch -n 1 free -h'
