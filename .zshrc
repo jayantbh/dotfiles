@@ -62,11 +62,9 @@ alias reterm='source ~/.zshrc'
 alias fire='watch -n 0.5 '\"'sensors | tail -n 6 | head -n 1 | awk '\''{print(\$1,\$2,\$3,\$4)}'\'' && sensors | tail -n 5 | head -n 4 | awk '\''{print(\$1,\$2,\$3)}'\'''\"''
 alias port='function __f() { if [ -z "$1" ]; then echo "Missing port number."; else lsof -i :$1 | grep LISTEN | egrep -o "^\w+\ +\d+" | egrep -o "\d+"; fi; ret=$?; unset -f __f; return $ret; }; __f'
 alias freeport='function __f() { if [ -z "$1" ]; then echo "Missing port number."; else kill -9 $(port ${1}); fi; ret=$?; unset -f __f; return $ret; }; __f'
-alias p2c="jscodeshift -t node_modules/pure-component-to-class/pure-component-to-class.js $1  --printOptions='{ \"useTabs\": true }'"
 alias holdmybeer='sudo'
 alias hmb='holdmybeer'
 alias 🖕='hmb'
-alias emojify='node ~/Projects/emojify.js'
 
 alias ya='yarn add';
 alias yad='ya -D';
